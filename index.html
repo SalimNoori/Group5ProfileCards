@@ -3,7 +3,7 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>My Profile Cards</title>
+    <title>Group 5 Profile Cards</title>
     <link
       href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;700&display=swap"
       rel="stylesheet"
@@ -24,80 +24,115 @@
       header {
         font-family: "Courier New", Courier, monospace;
       }
-      nav a:hover {
-        color: black;
+
+      .gradient {
+        background: linear-gradient(#333, #808080);
+      }
+
+      h1 {
+        text-align: center;
+        padding: 10px;
+        color: white;
+        margin: 0;
+      }
+
+      nav {
+        color: white;
+        padding: 10px 0;
+      }
+
+      nav ul {
+        display: flex;
+        justify-content: space-around;
+        list-style-type: none;
+        padding: 0;
+      }
+
+      nav ul li a {
+        color: white;
+        text-decoration: none;
+        transition: color 0.3s;
+      }
+
+      nav ul li a:hover {
+        color: #ffff99;
       }
 
       /* Footer CSS */
-  footer {
-    background-color: #333; 
-    color: #ffffff;
-    text-align: center;
-    padding: 10px;
-    font-size: 12px;
-}
+      footer {
+        background-color: #333; 
+        color: #ffffff;
+        text-align: center;
+        padding: 10px;
+        font-size: 12px;
+      }
 
-.footer-content {
-    display: flex;
-    justify-content: space-around;
-    padding: 10px;
-}
+      .footer-content {
+          display: flex;
+          justify-content: space-around;
+      }
 
-.footer-section {
-    margin: 5px;
-}
+      .footer-section {
+        flex: 1;
+        margin: 5px;
+      }
 
-.footer-section h3 {
-    color: #ffff99;
-    font-size: 14px;
-}
+      .footer-section h3 {
+          color: #ffff99;
+          font-size: 14px;
+      }
 
-.footer-section p, .footer-section li a {
-    color: #cccccc;
-    font-size: 12px;
-}
+      .footer-section p, .footer-section li a {
+          color: #cccccc;
+          font-size: 12px;
+      }
 
-.footer-section ul {
-    list-style-type: none;
-    padding: 0;
-}
+      .footer-section ul {
+          list-style-type: none;
+          padding: 0;
+      }
 
-.footer-section li {
-    margin: 5px 0; 
-    display: block; 
-}
+      .footer-section li {
+          margin: 5px 0; 
+          display: block; 
+      }
 
-.footer-section li a {
-    text-decoration: none;
-    color: inherit;
-    transition: color 0.3s;
-    display: block; 
-}
+      .footer-section li a {
+          text-decoration: none;
+          color: inherit;
+          transition: color 0.3s;
+          display: block; 
+      }
 
-.footer-section li a:hover {
-    color: #ffffff; 
-}
+      .footer-section li a:hover {
+          color: #ffffff; 
+      }
 
-.footer-bottom {
-    margin-top: 10px;
-    border-top: 1px solid #444;
-    padding-top: 5px;
-}
+      .footer-bottom {
+          margin-top: 10px;
+          border-top: 1px solid #444;
+          padding-top: 5px;
+      }
 
-.footer-bottom p {
-    margin: 0;
-}
+      .footer-bottom p {
+          margin: 0;
+      }
 
       /* Profile Card CSS */
+      .card-container {
+        display: flex;
+        justify-content: space-around;
+        flex-wrap: nowrap;  
+      }
+
       .profile-card {
         background: white;
         border: 1px solid #ddd;
-        margin: 20px auto;
         padding: 20px;
-        width: 80%;
-        max-width: 600px;
+        width: calc(100% / 3 - 10px);
         box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
         text-align: center;
+        margin: 10px;
       }
 
       .profile-card img {
@@ -117,8 +152,8 @@
     </style>
   </head>
   <body>
-    <header>
-      <h1>My Profile Cards</h1>
+    <div class="gradient">
+      <h1>Team 5 Members</h1>
       <nav>
         <ul>
           <li><a href="#">Home</a></li>
@@ -127,50 +162,55 @@
           <li><a href="#">Services</a></li>
         </ul>
       </nav>
-    </header>
-    <div class="profile-card">
-      <img
-        src="./images/salimpfp.jpg"
-        alt="Profile Image"
-        class="profile-photo"
-        width="150"
-      />
-      <h3>Salim Noori</h3>
-      <p>
-        Dedicated and results-driven professional with a diverse background in
-        program management, human resources, and project administration. I
-        thrive in dynamic environments where I can leverage my strong
-        organizational skills, attention to detail, and passion for delivering
-        exceptional results. With a proven track record of successfully managing
-        and executing projects, I am committed to driving efficiency and
-        excellence in every role I undertake.
-      </p>
     </div>
-    <div class="profile-card">
-      <img
-        src="./images/andrewpfp.jpg"
-        alt="Profile Image"
-        class="profile-photo"
-        width="150"
-      />
-      <h3>Andrew Lee</h3>
-      <p>
-        Hi, my name is Andrew. I have always loved to tinker with computers,
-        whether that be putting together my own PC, or making random workarounds
-        before discovering the world of programming. I have a heavy gaming
-        background and greatly attribute my passion for problem-solving and
-        solution-driven thinking to my years of enjoyment in games.
-      </p>
-    </div>
-    <div class="profile-card">
-      <img src="./images/minhpfp.png" alt="Profile Image" class="profile-photo">
-      <h3>Minh Nguyen</h3>
-      <p>
-        I am attending YearUp as a student of the Application Development track,
-        I enjoy learning and am working towards a career that will allow me to
-        learn continuously. I love spending my free time hanging out with
-        friends and my dogs.
-      </p>
+    <div class="card-container">
+        <div class="profile-card">
+          <img
+            src="./images/salimpfp.jpg"
+            alt="Profile Image"
+            class="profile-photo"
+            width="150"
+          />
+          <h3>Salim Noori</h3>
+          <p>
+            Dedicated and results-driven professional with a diverse background in
+            program management, human resources, and project administration. I
+            thrive in dynamic environments where I can leverage my strong
+            organizational skills, attention to detail, and passion for delivering
+            exceptional results. With a proven track record of successfully managing
+            and executing projects, I am committed to driving efficiency and
+            excellence in every role I undertake.
+          </p>
+        </div>
+        <div class="profile-card">
+          <img
+            src="./images/andrewpfp.jpg"
+            alt="Profile Image"
+            class="profile-photo"
+            width="150"
+          />
+          <h3>Andrew Lee</h3>
+          <p>
+            Hi, my name is Andrew. I have always loved to tinker with computers,
+            whether that be putting together my own PC, or making random workarounds
+            before discovering the world of programming. I have a heavy gaming
+            background and greatly attribute my passion for problem-solving and
+            solution-driven thinking to my years of enjoyment in games.
+          </p>
+        </div>
+        <div class="profile-card">
+          <img src="./images/minhpfp.png" 
+          alt="Profile Image" 
+          class="profile-photo" 
+          width="170">
+          <h3>Minh Nguyen</h3>
+          <p>
+            I am attending YearUp as a student of the Application Development track,
+            I enjoy learning and am working towards a career that will allow me to
+            learn continuously. I love spending my free time hanging out with
+            friends and my dogs.
+          </p>
+        </div>
     </div>
     <footer>
       <div class="footer-content">
@@ -180,7 +220,10 @@
         </div>
         <div class="footer-section">
           <h3>Contact</h3>
-          <p>Email: example@example.com</p>
+          <p>Emails:</p>
+          <p>snoori@sea.yearup.org</p>
+          <p>alee@sea.yearup.org</p>
+          <p>mnguyen003@sea.yearup.org</p>
         </div>
         <div class="footer-section">
           <h3>Follow Us</h3>
